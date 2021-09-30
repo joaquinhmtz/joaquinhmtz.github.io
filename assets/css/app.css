@@ -1,0 +1,25 @@
+@import url('./variables.css');
+@import url('./core/header.css');
+
+@font-face {
+    font-family: 'Ubuntu';
+    src:    url('./../fonts/Ubuntu/Ubuntu-Light.ttf'),
+            url('./../fonts/Ubuntu/Ubuntu-Bold.ttf'),
+            url('./../fonts/Ubuntu/Ubuntu-Regular.ttf')
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    font-family: 'Ubuntu';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+}
+
+p {
+  color: var(--font-color);  
+}
