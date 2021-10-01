@@ -26,6 +26,11 @@ main {
     width: 100%;
 }
 
+.main-information p {
+    order: 3;
+    line-height: 24px;
+}
+
 /* Small screens, laptops */
 @media (min-width:769px) {
     main { 
