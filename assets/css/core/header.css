@@ -25,6 +25,7 @@
     transition: transform 0.3s ease-in-out;
     padding-top: 10rem;
     display: none;
+    z-index: 5;
 }
 
 .navbar .nav-menu li {
