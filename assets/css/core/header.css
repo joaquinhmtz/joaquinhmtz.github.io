@@ -33,6 +33,7 @@
     display: flex;
     justify-content: center;
     background-color: var(--primary-color);
+    padding: 15px 0;
 }
 
 .navbar .nav-menu li a {
@@ -80,4 +81,40 @@
 
 .hamburguer:hover .bar {
     background-color: var(--secondary-color);
+}
+
+/* Small screens, laptops */
+@media (min-width:769px) {
+    .hamburguer {
+        display: none;
+    }
+
+    .navbar .nav-menu {
+        display: flex !important;
+        width: 40%;
+        height: 100px;
+        flex-flow: row nowrap;
+        background-color: var(--purple-light);
+        position: inherit;
+        padding-top: 0;
+        transform: none !important;
+        align-items: center;
+    }
+
+    .navbar .nav-menu li {
+        background-color: var(--purple-light);
+    }
+
+    .navbar .nav-menu li a {
+        font-size: 1rem;
+        font-family: 'Ubuntu-Bold';
+        font-weight: 100;
+        color: var(--primary-color);
+        background-color: var(--purple-light);
+    }
+
+    .navbar .nav-menu li a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }

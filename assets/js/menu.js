@@ -2,7 +2,6 @@ let hamburguerIcon = document.getElementById('hamburguer');
 let menu = document.getElementById('nav-menu');
 
 const open = () => {
-    console.log('abrir')
     if (hamburguerIcon.classList.contains('active')) {
         hamburguerIcon.classList.remove('active');
         hamburguerIcon.children[0].style.transform = 'rotate(0)';
