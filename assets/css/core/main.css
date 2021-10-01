@@ -28,7 +28,7 @@ main {
 
 .main-information p {
     order: 3;
-    line-height: 24px;
+    line-height: 25px;
 }
 
 /* Small screens, laptops */
@@ -49,5 +49,9 @@ main {
 
     .main-information .main-img {
         order: 2;
+    }
+
+    .main-information p {
+        order: 3;
     }
 }
