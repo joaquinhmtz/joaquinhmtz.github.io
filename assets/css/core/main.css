@@ -19,6 +19,7 @@ main {
     font-family: 'Ubuntu-Bold';
     color: var(--title-color);
     letter-spacing: 1.5px;
+    margin-bottom: 1.5rem;
 }
 
 .personal-info p {
@@ -33,6 +34,70 @@ main {
     width: 100%;
 }
 
+.btn-actions {
+    padding: 20px 0;
+}
+
+.btn {
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: translateY(3px);
+}
+
+.btn-complementary {
+    position: relative;
+    background-color: var(--complementary-color);
+    color: white;
+    border: 1px solid var(--complementary-color);
+}
+
+.btn-complementary-outline {
+    position: relative;
+    border: 1px solid var(--complementary-color);
+    color: var(--complementary-color);
+}
+
+.btn-complementary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: currentColor;
+    opacity: 0.2;
+    transition: transform 200ms ease-in;
+}
+
+.btn-complementary:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btn-complementary-outline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    background-color: currentColor;
+    opacity: 0.2;
+    transition: transform 200ms ease-in;
+}
+
+.btn-complementary-outline:hover::after {
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+
 /* Small screens, laptops */
 @media (min-width:769px) {
     main { 
@@ -43,10 +108,6 @@ main {
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 0;
         grid-column-gap: 1.5rem;
-    }
-
-    .personal-info h1 {
-        padding-bottom: 1.5rem;
     }
 
     .main-information .main-img {

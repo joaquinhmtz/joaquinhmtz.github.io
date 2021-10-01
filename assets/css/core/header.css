@@ -111,10 +111,11 @@
         font-weight: 100;
         color: var(--primary-color);
         background-color: var(--purple-light);
+        padding: 8px;
     }
 
     .navbar .nav-menu li a:hover {
-        text-decoration: underline;
+        border: 2px dashed var(--primary-color);
         cursor: pointer;
     }
 }
