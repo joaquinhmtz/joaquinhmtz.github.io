@@ -10,12 +10,19 @@ main {
     grid-row-gap: 2.5rem;
 }
 
-.main-information h1 {
+.personal-info {
     order: 2;
+}
+
+.personal-info h1 {
     font-size: 3.2rem;
     font-family: 'Ubuntu-Bold';
     color: var(--title-color);
     letter-spacing: 1.5px;
+}
+
+.personal-info p {
+    line-height: 25px;
 }
 
 .main-information .main-img {
@@ -24,11 +31,6 @@ main {
 
 .main-information .main-img img {
     width: 100%;
-}
-
-.main-information p {
-    order: 3;
-    line-height: 25px;
 }
 
 /* Small screens, laptops */
@@ -43,15 +45,11 @@ main {
         grid-column-gap: 1.5rem;
     }
 
-    .main-information h1 {
-        order: 1;
+    .personal-info h1 {
+        padding-bottom: 1.5rem;
     }
 
     .main-information .main-img {
         order: 2;
-    }
-
-    .main-information p {
-        order: 3;
     }
 }
