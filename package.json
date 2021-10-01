@@ -1,0 +1,22 @@
+{
+  "name": "joaquinhmtz.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaquinhmtz/joaquinhmtz.github.io.git"
+  },
+  "author": "Joaquín Hernández - joaquinhmtz@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaquinhmtz/joaquinhmtz.github.io/issues"
+  },
+  "homepage": "https://github.com/joaquinhmtz/joaquinhmtz.github.io#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
+  }
+}

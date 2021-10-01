@@ -134,6 +134,27 @@ main {
     height: 18rem;
     box-shadow: rgba(48, 55, 120, 0.15) 0px 3px 3px 0px;
     padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-hability {
+    font-size: 2rem;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-hability svg {
+    background-color: var(--secondary-color);
 }
 
 /* Small screens, laptops */
