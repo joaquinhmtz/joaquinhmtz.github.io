@@ -1,0 +1,48 @@
+main {
+    padding: 20px 50px;
+    margin-top: 20px;
+}
+
+.main-information {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2.5rem;
+}
+
+.main-information h1 {
+    order: 2;
+    font-size: 3.2rem;
+    font-family: 'Ubuntu-Bold';
+    color: var(--title-color);
+    letter-spacing: 1.5px;
+}
+
+.main-information .main-img {
+    order: 1;
+}
+
+.main-information .main-img img {
+    width: 100%;
+}
+
+/* Small screens, laptops */
+@media (min-width:769px) {
+    main { 
+        margin-top: 3.5rem;
+    }
+
+    .main-information {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 0;
+        grid-column-gap: 1.5rem;
+    }
+
+    .main-information h1 {
+        order: 1;
+    }
+
+    .main-information .main-img {
+        order: 2;
+    }
+}

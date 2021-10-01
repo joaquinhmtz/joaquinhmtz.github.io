@@ -91,7 +91,7 @@
 
     .navbar .nav-menu {
         display: flex !important;
-        width: 40%;
+        width: 50%;
         height: 100px;
         flex-flow: row nowrap;
         background-color: var(--purple-light);
@@ -106,7 +106,7 @@
     }
 
     .navbar .nav-menu li a {
-        font-size: 1rem;
+        font-size: 1.15rem;
         font-family: 'Ubuntu-Bold';
         font-weight: 100;
         color: var(--primary-color);
