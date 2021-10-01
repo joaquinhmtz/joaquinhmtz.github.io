@@ -2,7 +2,7 @@
     width: 100%;
     height: 100px;
     padding: 20px 50px;
-    background-color: var(--primary-color);
+    background-color: var(--purple-light);
 }
 
 .navbar {
@@ -11,22 +11,73 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--purple-light);
 }
 
-.navbar ul {
+.navbar .nav-menu {
+    flex-flow: column nowrap;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    padding-top: 10rem;
     display: none;
 }
 
-.hamburguer {
+.navbar .nav-menu li {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     background-color: var(--primary-color);
+}
+
+.navbar .nav-menu li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--complementary-color);
+    background-color: var(--primary-color);
+}
+
+.header-name {
+    font-family: 'Ubuntu-Bold';
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-name::after {
+    content: '.';
+    color: var(--complementary-color);
+    font-size: 3.5rem;
+    position: absolute;
+    right: -20px;
+    top: -1.4rem;
+}
+
+.hamburguer {
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 10;
 }
 
 .hamburguer .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
-    margin: 5px auto;
+    background-color: var(--complementary-color);
+    margin: 5px 0;
+    transform-origin: 1px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+.hamburguer:hover .bar {
+    background-color: var(--secondary-color);
 }
