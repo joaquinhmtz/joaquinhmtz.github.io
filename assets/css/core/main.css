@@ -140,6 +140,10 @@ main {
     align-items: center;
 }
 
+.container-hability h3 {
+    padding: 15px 0;
+}
+
 .icon-hability {
     font-size: 2rem;
     padding: 15px;
