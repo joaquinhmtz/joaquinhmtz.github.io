@@ -166,6 +166,13 @@ main {
     width: 100%;
 }
 
+/* Mobile devices */
+@media (min-width:320px) and (max-width: 480px) and (orientation : landscape) {
+    .habilities {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 /* iPads, Tablets */
 @media (min-width:481px) and (max-width: 768px) {
     .habilities {
@@ -200,5 +207,10 @@ main {
 
     .container-hability {
         height: 18.5rem;
+    }
+}
+@media (min-width:769px) and (orientation : landscape) {
+    .habilities {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
