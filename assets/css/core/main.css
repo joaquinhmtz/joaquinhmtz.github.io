@@ -166,6 +166,13 @@ main {
     width: 100%;
 }
 
+/* iPads, Tablets */
+@media (min-width:481px) and (max-width: 768px) {
+    .habilities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Small screens, laptops */
 @media (min-width:769px) {
     main { 
