@@ -16,9 +16,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: var(--purple-light);
     font-family: 'Ubuntu';
     font-size: 15px;
+}
+
+body {
+    background-color: var(--purple-light);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,6 +40,10 @@ h2 {
 
 h3 {
     font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.5rem;
 }
 
 p {

@@ -140,15 +140,15 @@ main {
     align-items: center;
 }
 
-.container-hability h3 {
+.container-hability h4 {
     padding: 15px 0;
 }
 
 .icon-hability {
     font-size: 2rem;
-    padding: 15px;
+    padding: 20px;
     border-radius: 50%;
-    background-color: var(--secondary-color);
+    background: linear-gradient(134deg, rgb(66, 100, 208) 0%, rgb(48, 55, 120) 99%);
     color: white;
     width: 5rem;
     height: 5rem;
@@ -157,8 +157,8 @@ main {
     justify-content: center;
 }
 
-.icon-hability svg {
-    background-color: var(--secondary-color);
+.icon-hability img {
+    width: 100%;
 }
 
 /* Small screens, laptops */
@@ -180,5 +180,9 @@ main {
 
     .section-habilities {
         margin-top: 5rem;
+    }
+
+    .habilities {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
