@@ -131,7 +131,7 @@ main {
 .container-hability {
     background-color: white;
     width: 100%;
-    height: 18rem;
+    height: 18.5rem;
     box-shadow: rgba(48, 55, 120, 0.15) 0px 3px 3px 0px;
     padding: 2rem;
     display: flex;
@@ -142,6 +142,11 @@ main {
 
 .container-hability h4 {
     padding: 15px 0;
+}
+
+.container-hability p {
+    padding: 0 3rem;
+    text-align: center;
 }
 
 .icon-hability {
